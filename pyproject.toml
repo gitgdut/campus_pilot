@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "campus-pilot"
+version = "0.1.0"
+description = "一个通过 MCP 管理学习任务的校园智能体"
+requires-python = ">=3.11"
+dependencies = [
+  "mcp[cli]==2.3.0",
+  "openai==3.36.1",
+  "python-dotenv==1.2.4",
+  "streamlit==1.55.0",
+]
+
+[project.scripts]
+campus-pilot = "campus_pilot.cli:main"
+campus-pilot-web = "campus_pilot.web:main"
+
+[tool.setuptools.packages.find]
+include = ["campus_pilot*"]
+
