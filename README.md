@@ -38,6 +38,9 @@ LLM_BASE_URL=兼容服务的API地址
 
 使用官方 OpenAI 时可以将 `LLM_BASE_URL` 留空。密钥文件 `.env` 已被 `.gitignore` 排除。
 
+## 原型展示链接
+https://modao.cc/proto/ZkPKIn6ltomk1qsc4pfO9f/sharing?view_mode=read_only&device=desktop_1920&orientation=portrait
+
 ## 自动测试
 
 测试不需要模型密钥，也不会调用外网：
